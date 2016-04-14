@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>simmo.ee</title>
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
@@ -10,10 +11,41 @@
 <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/sandstone/bootstrap.min.css" rel="stylesheet" integrity="sha384-QqZs0aSOGFan3GWVdP4PyCBp6icaF/4n8Q+wsmZUTiiVIqE4r4tFYcb8Osf+8y45" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="simmo.css">
+
+    <script>
+
+  <!----- JQUERY FOR SLIDING NAVIGATION --->
+  $(document).ready(function() {
+    $('a[href*=#]').each(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+      && location.hostname == this.hostname
+      && this.hash.replace(/#/,'') ) {
+        var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+        var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+         if ($target) {
+           var targetOffset = $target.offset().top;
+
+  <!----- JQUERY CLICK FUNCTION REMOVE AND ADD CLASS "ACTIVE" + SCROLL TO THE #DIV--->
+           $(this).click(function() {
+              $("#nav li a").removeClass("active");
+              $(this).addClass('active');
+             $('html, body').animate({scrollTop: targetOffset}, 1000);
+             return false;
+           });
+        }
+      }
+    });
+
+  });
+
+
+  </script>
+
+
   </head>
 <body>
   <div class="container">
-      <div class="navbar navbar-custom">
+      <div class="navbar navbar-custom navbar-fixed-top">
           <div class="container">
               <!-- Grupp, mida näidaakse ainult väiksema eraani puhul -->
               <div class="navbar-header ">
@@ -31,10 +63,10 @@
 
                   </form>
                   <ul class="nav navbar-nav pull-right">
-                      <li class="active"><a href="index.html">Avaleht</a></li>
-                      <li><a href="blogi.php">Blogi</a></li>
+                      <li class="active"><a href="#sisu1">Sisu1</a></li>
+		                  <li><a href="#sisu2">Slide 2</a></li>
                       <li><a href="teenused.html">Teenused</a></li>
-                      <li><a href="portfolio.html">Portfoolio</a></li>
+                      <li><a href="#sisu3">Sisu3</a></li>
                       <li><a data-toggle="modal" href="#kontakt">Kontakt</a></li>
                   </ul>
 
@@ -79,11 +111,9 @@
     </div>
   </div>
 </section>
-<!--/banne-->
-
-<div class="container">
-</div>
-<div class="row">
+<!--/banner-->
+<!--sisu1-->
+<div id="sisu1">
   <div class="container">
   <div class="col-md-4">
     <h4 class="text-muted text-center">Teenus 1</h4>
@@ -119,9 +149,57 @@
     </button>
   </div>
 </div>
+</div>
+<!--/sisu1-->
+<!--sisu2-->
+<div id="sisu2">
+<div class="container">
 
-<hr>
+</div>
+</div>
+<!--/sisu2-->
+<!--sisu3-->
+<div id="sisu3">
+<div class="container">
+<div class="col-md-4">
+  <h4 class="text-muted text-center">Teenus 1</h4>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  cillum dolore eu fugiat nulla pariatur. </p>
+  <button type="button" class="btn btn-default btn-lg">
+    <span class="glyphicon glyphicon-star"></span> Vaata
+  </button>
+</div>
+<div class="col-md-4">
+  <h4 class="text-muted text-center">Teenus 2</h4>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  cillum dolore eu fugiat nulla pariatur. </p>
+  <button type="button" class="btn btn-default btn-lg btn-success">
+    <span class="glyphicon glyphicon-check"></span> Vaata
+  </button>
+</div>
+<div class="col-md-4">
+  <h4 class="text-muted text-center">Teenus 3</h4>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  cillum dolore eu fugiat nulla pariatur. </p>
+  <button type="button" class="btn btn-info btn-lg btn-success">
+    <span class="glyphicon glyphicon-bell"></span> Vaata
+  </button>
+</div>
+</div>
+</div>
+<!--/sisu3-->
 
+<!--jalus
+<div id="jalus">
   <footer>
     <div class="container">
 
@@ -150,6 +228,7 @@
       </div>
     </div>
   </footer>
-
+</div>
+-->
   </body>
 </html>
