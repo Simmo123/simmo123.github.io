@@ -7,3 +7,30 @@
       -moz-border-radius: 0;
       border-radius: 0;
   }
+
+  #sisu2{
+  	background-color: #fff;
+  	color: #333333;
+  	height: 300px;
+  	margin: 0 auto;
+  	overflow: hidden;
+  	padding: 200px 0;
+  }
+
+
+  #sisu1{
+  	background:url('../img/slide1.jpg') 50% 0 no-repeat fixed;
+  	color: #fff;
+  	height: 600px;
+  	margin: 0;
+  	padding: 200px 0 260px 0;
+  	background-size: cover;
+  }
+
+  #sisu3{
+  	background: url(../img/slide3.jpg) 50% 0 no-repeat fixed;
+  	color: #fff;
+  	height: 600px;
+  	padding: 170px 0 0 0;
+  	background-size: cover;
+  }
