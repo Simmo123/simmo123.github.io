@@ -48,6 +48,10 @@
   margin top: 10px auto;
 }
 
+h3{
+font-family: 'Carrois Gothic SC', sans-serif;
+}
+
 h4{
   font-size: 95px;
   font-family: 'Lato', sans-serif;
@@ -114,7 +118,7 @@ h6{
 
   #sisu5{
     background: url('img/glacier-530050_1920.jpg') 50% 0 no-repeat fixed;
-    background-color: #6699FF ;
+    background-color: #3333CC ;
     background-blend-mode: multiply;
     color: #fff;
     height: 600px;
