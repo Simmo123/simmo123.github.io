@@ -38,6 +38,11 @@
 
   });
 
+  $(document).ready(function () {
+  			  $(".navbar-toggle").on("click", function () {
+  				    $(this).toggleClass("active");
+  			  });
+  		});
 
   </script>
 
@@ -49,7 +54,7 @@
           <div class="container">
               <!-- Grupp, mida näidaakse ainult väiksema eraani puhul -->
               <div class="navbar-header ">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar" aria-expanded="false" aria-controls="navbar">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".menyy" aria-expanded="false" aria-controls="navbar">
                   <span class="sr-only">Toggle navigation</span>
                   <span class="icon-bar top-bar"></span>
                   <span class="icon-bar middle-bar"></span>
@@ -59,7 +64,7 @@
               </div>
 
               <!-- Grupp, mis peidetakse -->
-              <div class="collapse navbar-collapse navbar">
+              <div class="collapse navbar-collapse menyy">
                   <form class="navbar-form pull-right">
 
                   </form>
