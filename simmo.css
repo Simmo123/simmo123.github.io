@@ -21,10 +21,10 @@
 	background-color: #fff;
 	color: #333333;
 	height: 300px;
-	margin: 0 auto;
+  margin: 0 auto;
 	overflow: hidden;
 	padding: 200px 0;
-  	margin-bottom:150px;
+  margin-bottom:150px;
 }
 
   #sisu3{
@@ -34,3 +34,8 @@
   	padding: 170px 0 0 0;
   	background-size: cover;
   }
+
+  .col-centered{
+    float: none;
+    margin: 0 auto;
+}
