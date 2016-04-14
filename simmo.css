@@ -8,16 +8,6 @@
       border-radius: 0;
   }
 
-  #sisu2{
-  	background-color: #fff;
-  	color: #333333;
-  	height: 300px;
-  	margin: 0 auto;
-  	overflow: hidden;
-  	padding: 200px 0;
-  }
-
-
   #sisu1{
   	background:url('../img/slide1.jpg') 50% 0 no-repeat fixed;
   	color: #fff;
@@ -26,6 +16,16 @@
   	padding: 200px 0 260px 0;
   	background-size: cover;
   }
+
+  #sisu2{
+	background-color: #fff;
+	color: #333333;
+	height: 300px;
+  margin: 0 auto;
+	overflow: hidden;
+	padding: 200px 0;
+  margin-bottom:150px;
+}
 
   #sisu3{
   	background: url(../img/slide3.jpg) 50% 0 no-repeat fixed;
