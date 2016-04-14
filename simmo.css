@@ -45,8 +45,28 @@
 }
 
 .center-block{
-
   margin top: 10px auto;
+}
+
+h4{
+  font-size: 95px;
+  font-family: 'Lato', sans-serif;
+  position: relative;
+  left: 30px;
+}
+
+h5{
+  font-size: 60px;
+  font-family: 'Lato', sans-serif;
+  position: relative;
+  left: 100px;
+}
+
+h6{
+  font-size: 130px;
+  font-family: 'Lato', sans-serif;
+  position: relative;
+  right: 100px;
 }
 
   #sisu1{
@@ -56,9 +76,11 @@
   	color: #fff;
   	height: 600px;
   	margin: 0;
-  	padding: 600px 0 260px 0;
+  	padding: 150px 0 300px 0;
+    margin bottom: 300px;
   	background-size: cover;
   }
+
 
   #sisu2{
 	background-color: #fff;
