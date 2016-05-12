@@ -85,6 +85,25 @@ h6{
   	background-size: cover;
   }
 
+  #sisu1_port{
+  	background:url('img/aurora-borealis-1066594_1280.jpg') 50% 0 no-repeat fixed;
+    background-color: #336633 ;
+    background-blend-mode: multiply;
+  	color: #fff;
+  	height: 400px;
+  	margin: 0;
+  	padding: 150px 0 300px 0;
+    margin bottom: 300px;
+  	background-size: cover;
+  }
+
+  #sisu1_port h6{
+    text-align: center;
+  }
+
+  #portf{
+    margin-top:50px;
+  }
 
   #sisu2{
 	background-color: #fff;
@@ -122,11 +141,15 @@ h6{
     background-blend-mode: multiply;
     color: #fff;
     height: 600px;
-    padding: 170px 0 0 0;
+    padding: 100px 0 0 0;
     background-size: cover;
+
 }
 
+  #myModal {
+    right:50%;
 
+  }
 
   .col-centered{
     float: none;
