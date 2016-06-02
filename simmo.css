@@ -1,157 +1,213 @@
-
-  .nav li a{padding: 25px 20px;}
-  .navbar-form{padding-top: 10px; }
-  .navbar{
-      margin-bottom: 0;
-      -webkit-border-radius: 0;
-      -moz-border-radius: 0;
-      border-radius: 0;
-  }
-
-  .navbar-custom .navbar-toggle .icon-bar{
-    background-color: black;
+body {
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  color: #333;
+  font-size: 14px;
+  line-height: 20px;
 }
 
-.navbar-toggle {
-  border: none;
-  background: transparent !important;
-}
-.navbar-toggle:hover {
-  background: transparent !important;
-}
-.navbar-toggle .icon-bar {
-  width: 22px;
-  transition: all 0.2s;
-}
-.navbar-toggle .top-bar {
-  transform: rotate(45deg);
-  transform-origin: 10% 10%;
-}
-.navbar-toggle .middle-bar {
-  opacity: 0;
-}
-.navbar-toggle .bottom-bar {
-  transform: rotate(-45deg);
-  transform-origin: 10% 90%;
-}
-.navbar-toggle.collapsed .top-bar {
-  transform: rotate(0);
-}
-.navbar-toggle.collapsed .middle-bar {
-  opacity: 1;
-}
-.navbar-toggle.collapsed .bottom-bar {
-  transform: rotate(0);
+.body {
+  background-color: #e7f5ff;
 }
 
-.center-block{
-  margin top: 10px auto;
+.navbar {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  z-index: 1;
+  display: block;
+  overflow: auto;
+  height: 75px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 0px;
+  float: none;
+  clear: none;
+  background-color: #575757;
 }
 
-h3{
-font-family: 'Carrois Gothic SC', sans-serif;
+.nav_link {
+  height: 75px;
+  margin: auto;
+  -webkit-perspective: 1036px;
+  perspective: 1036px;
+  font-family: Lato, sans-serif;
+  color: #dfdfdf;
+  line-height: 220%;
+  text-align: center;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
-h4{
-  font-size: 95px;
-  font-family: 'Lato', sans-serif;
+.banner {
+  display: block;
+  width: auto;
+  height: 600px;
+  margin-top: 75px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #0095cf;
+}
+
+.content {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  min-width: 100%;
+  background-color: #e7f5ff;
+}
+
+.nav {
   position: relative;
-  left: 30px;
+  left: 0px;
+  top: 0px;
+  right: 0px;
 }
 
-h5{
-  font-size: 60px;
-  font-family: 'Lato', sans-serif;
-  position: relative;
-  left: 100px;
+.banner_c {
+  height: 100%;
 }
 
-h6{
-  font-size: 130px;
-  font-family: 'Lato', sans-serif;
-  position: relative;
-  right: 100px;
+.banner_h {
+  height: 600px;
 }
 
-  #sisu1{
-  	background:url('img/aurora-borealis-1066594_1280.jpg') 50% 0 no-repeat fixed;
-    background-color: #336633 ;
-    background-blend-mode: multiply;
-  	color: #fff;
-  	height: 600px;
-  	margin: 0;
-  	padding: 150px 0 300px 0;
-    margin bottom: 300px;
-  	background-size: cover;
-  }
-
-  #sisu1_port{
-  	background:url('img/aurora-borealis-1066594_1280.jpg') 50% 0 no-repeat fixed;
-    background-color: #336633 ;
-    background-blend-mode: multiply;
-  	color: #fff;
-  	height: 400px;
-  	margin: 0;
-  	padding: 150px 0 300px 0;
-    margin bottom: 300px;
-  	background-size: cover;
-  }
-
-  #sisu1_port h6{
-    text-align: center;
-  }
-
-  #portf{
-    margin-top:50px;
-  }
-
-  #sisu2{
-	background-color: #fff;
-	color: #333333;
-	height: 300px;
-  margin: 0 auto;
-	overflow: hidden;
-	padding: 150px 0;
-  margin-bottom:150px;
+.banner_p {
+  height: 600px;
 }
 
-  #sisu3{
-  	background: url('img/prague-1168302_1920.jpg') 50% 0 no-repeat fixed;
-    background-color: #680000 ;
-    background-blend-mode: multiply;
-  	color: #fff;
-  	height: 600px;
-  	padding: 170px 0 0 0;
-  	background-size: cover;
-  }
+.banner_h_lorem {
+  margin-top: 60px;
+  font-family: Lato, sans-serif;
+  color: #000;
+  font-size: 47px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
 
-  #sisu4{
-  background-color: #fff;
-  color: #333333;
+.banner_h_dolor {
+  font-family: Lato, sans-serif;
+  color: #000;
+  font-size: 47px;
+  line-height: 44px;
+  font-weight: 500;
+}
+
+.thematic {
+  height: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #dbdbdb;
+}
+
+.banner_h_duis {
+  margin-bottom: 10px;
+  font-family: Lato, sans-serif;
+  color: #e6e6e6;
+  font-size: 47px;
+  line-height: 44px;
+  text-transform: uppercase;
+}
+
+.banner_p_text {
+  margin-top: 60px;
+  font-family: Lato, sans-serif;
+  color: #e6e6e6;
+  font-size: 26px;
+  line-height: 33px;
+  text-align: justify;
+}
+
+.about {
+  height: 100%;
+}
+
+.about_c {
+  height: 99%;
+}
+
+.bootstrap {
   height: 400px;
-  margin: 0 auto;
-  overflow: hidden;
-  padding: 100px 0;
-  margin-bottom:100px;
+  margin-top: 50px;
+  background-color: #0095cf;
 }
 
-  #sisu5{
-    background: url('img/glacier-530050_1920.jpg') 50% 0 no-repeat fixed;
-    background-color: #3333CC ;
-    background-blend-mode: multiply;
-    color: #fff;
-    height: 600px;
-    padding: 100px 0 0 0;
-    background-size: cover;
-
+.css {
+  height: 400px;
+  margin-top: 50px;
+  border-right: 3px solid #e7f5ff;
+  border-left: 3px solid #e7f5ff;
+  background-color: #0095cf;
 }
 
-  #myModal {
-    right:50%;
+.html {
+  height: 400px;
+  margin-top: 50px;
+  background-color: #0095cf;
+}
 
-  }
+.bootstrap_h {
+  margin-top: 10px;
+  font-family: Lato, sans-serif;
+  color: #000;
+  text-align: center;
+}
 
-  .col-centered{
-    float: none;
-    margin: 0 auto;
+.css_h {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #000;
+  text-align: center;
+}
+
+.html_h {
+  margin-top: 10px;
+  color: #000;
+  text-align: center;
+}
+
+.bootstrap_c {
+  height: 380px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  background-color: #0095cf;
+}
+
+.css_c {
+  height: 380px;
+  margin-top: 5px;
+  background-color: #0095cf;
+}
+
+.html_c {
+  height: 380px;
+  margin-top: 10px;
+  background-color: #0095cf;
+}
+
+.bootstrap_p {
+  font-size: 25px;
+  line-height: 23px;
+  text-align: left;
+  letter-spacing: -1px;
+}
+
+.css_p {
+  font-size: 25px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: -1px;
+}
+
+.html_p {
+  font-size: 25px;
+  line-height: 23px;
+  text-align: right;
+  letter-spacing: -1px;
 }
