@@ -1,240 +1,54 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>simmo.ee</title>
-    <link rel="shortcut icon" href="img/SM2.gif" />
-    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
-    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css" rel="stylesheet">
-<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/sandstone/bootstrap.min.css" rel="stylesheet" integrity="sha384-QqZs0aSOGFan3GWVdP4PyCBp6icaF/4n8Q+wsmZUTiiVIqE4r4tFYcb8Osf+8y45" crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="simmo.css">
-<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Carrois+Gothic+SC' rel='stylesheet' type='text/css'>
-    <script>
-
-  <!----- JQUERY FOR SLIDING NAVIGATION --->
-  $(document).ready(function() {
-    $('a[href*=#]').each(function() {
-      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-      && location.hostname == this.hostname
-      && this.hash.replace(/#/,'') ) {
-        var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
-        var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
-         if ($target) {
-           var targetOffset = $target.offset().top;
-
-  <!----- JQUERY CLICK FUNCTION REMOVE AND ADD CLASS "ACTIVE" + SCROLL TO THE #DIV--->
-           $(this).click(function() {
-              $("#nav li a").removeClass("active");
-              $(this).addClass('active');
-             $('html, body').animate({scrollTop: targetOffset}, 1000);
-             return false;
-           });
-        }
-      }
-    });
-
-  });
-
-  $(document).ready(function () {
-  			  $(".navbar-toggle").on("click", function () {
-  				    $(this).toggleClass("active");
-  			  });
-  		});
-
-  </script>
-
-
-  </head>
-<body>
-  <body data-spy="scroll" data-target=".navbar" data-offset="50">
-  <div class="container">
-      <div class="navbar navbar-inverse navbar-fixed-top">
-          <div class="container">
-              <!-- Grupp, mida näidaakse ainult väiksema eraani puhul -->
-              <div class="navbar-header ">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".menyy" aria-expanded="false" aria-controls="navbar">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar top-bar"></span>
-                  <span class="icon-bar middle-bar"></span>
-                  <span class="icon-bar bottom-bar"></span>
-                </button>
-                  <a href="index.html" class="center-block img-responsive"><img src="img/SM_meny.gif" alt="pilt" width="60" height="68"/></a>
-              </div>
-
-              <!-- Grupp, mis peidetakse -->
-              <div class="collapse navbar-collapse menyy">
-                  <form class="navbar-form pull-right">
-
-                  </form>
-                  <ul class="nav navbar-nav pull-right">
-                      <li class="active"><a href="#sisu1">Home</a></li>
-		                  <li><a href="#sisu2">About Me</a></li>
-                      <li><a href="#sisu3">Skills</a></li>
-                      <li><a href="#sisu4">Portfolio</a></li>
-                      <li><a href="#sisu5">Contact</a></li>
-                  </ul>
-
-              </div>
+<body class="body">
+  <div class="content">
+    <div class="w-nav navbar" data-animation="default" data-collapse="medium" data-contain="1" data-duration="400">
+      <div class="w-container nav">
+        <a class="w-nav-brand" href="#"></a>
+        <nav class="w-nav-menu" role="navigation"><a class="w-nav-link nav_link" href="#">Home</a><a class="w-nav-link nav_link" href="#">About</a><a class="w-nav-link nav_link" href="#">Contact</a>
+        </nav>
+        <div class="w-nav-button">
+          <div class="w-icon-nav-menu"></div>
+        </div>
+      </div>
+    </div>
+    <div class="banner">
+      <div class="w-container banner_c">
+        <div class="w-row banner_text">
+          <div class="w-col w-col-6 banner_h">
+            <h1 class="banner_h_lorem">LOREM IPSUM</h1>
+            <div class="banner_h_dolor">DOLOR SIT AMET</div>
+            <div class="thematic"></div>
+            <div class="banner_h_duis">Duis tincidunt</div>
+            <div class="banner_h_duis">Sed enim nisi</div>
           </div>
-      </div>
-</div>
-</div>
-
-<!--sisu1-->
-<div id="sisu1">
-  <div class="container">
-    <div class="col-md-4 col-centered text-center ">
-      <h4>Lorem</h4>
-      <h5>Dolor sit</h5>
-      <h6>Amet</h6>
-      </div>
-    </div>
-
-    </div>
-  </div>
-<!--/sisu1-->
-<!--sisu2-->
-<div id="sisu2">
-  <div class="container">
-  <div class="content" >
-            <div class="col-md-4">
-              <img src="http://www.borrowlenses.com/blog/wp-content/uploads/2013/03/ben-gb1.jpg" style="height:155px;" />
-            </div>
-            <div class="col-md-8 col-centered pull-right col-centered">
-            <h3 class="text-muted">About me</h3>
-            <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur.</p>
-            </div>
-  </div>
-  </div>
-
-</div>
-
-<!--/sisu2-->
-<!--sisu3-->
-<div id="sisu3">
-<div class="container">
-<div class="col-md-4">
-  <h3 class="text-muted text-center">Bootstrap</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-  cillum dolore eu fugiat nulla pariatur. </p>
-
-</div>
-<div class="col-md-4">
-  <h3 class="text-muted text-center">HTML</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-  cillum dolore eu fugiat nulla pariatur. </p>
-
-</div>
-<div class="col-md-4">
-  <h3 class="text-muted text-center">PHP</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-  cillum dolore eu fugiat nulla pariatur. </p>
-
-</div>
-</div>
-</div>
-<div id="sisu4">
-  <div class="container">
-<div class="row thumbnail" style="background-color:#FAFAFA; border:none; box-shadow:none;">
-  <div class="content" >
-    <div class="col-md-4" style="margin-top:20px;">
-      <a href="#"><img src="http://placehold.it/700x400" class="img-responsive center-block img-rounded"/></a>
-    </div>
-    <div class="col-md-4" style="margin-top:20px;">
-      <a href="#"><img src="http://placehold.it/700x400" class="img-responsive center-block img-rounded" /></a>
-    </div>
-    <div class="col-md-4" style="margin-top:20px;">
-      <a href="#"><img src="http://placehold.it/700x400" class="img-responsive center-block img-rounded" /></a>
-    </div>
-    <a href="portfolio.html" class="text-muted pull-right" style="font-family: 'Carrois Gothic SC', sans-serif; margin-top:20px; margin-right: 40px; font-size: 20px; ">Check more...</a>
-    </div>
-  </div>
-  </div>
-  <div id="myModal" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-
-    </div>
-  </div>
-</div>
-<div id="sisu5">
-<div class="container">
-  <form action="https://formspree.io/simmo.meri@gmail.com"
-   method="POST">
-       <div class="form-group">
-           <label for="nimi">Name:</label>
-           <input name="nimi" class="form-control input-lg" placeholder="Your name" type="text" id="nimi">
-       </div>
-       <div class="form-group">
-           <label for="email">Email:</label>
-           <input name="email" class="form-control input-lg" placeholder="Your e-mail" type="text" id="email">
-       </div>
-       <div class="form-group">
-           <label for="sonum">Message:</label>
-           <textarea class="form-control" name="sonum" placeholder="Message..." rows="6"></textarea>
-       </div>
-       <div class="form-group">
-           <button type="submit" class="btn btn-primary pull-right">Submit</button>
-           <br>
-   </div>
-   </form></div>
-</div>
-<!--/sisu3-->
-
-<!--jalus
-<div id="jalus">
-  <footer>
-    <div class="container">
-
-      <div class="row">
-        <div class="col-sm-3">
-          <h4>Kontakt</h4>
-          <ul class="list-unstyled">
-            <li><span class="glyphicon glyphicon-phone"></span>255 255 255</li>
-            <li><span class="glyphicon glyphicon-envelope"></span>meie(at)email.com</li>
-            <li><span class="glyphicon glyphicon-map-marker"></span>Eesti, Läänemaa</li>
-          </ul>
-        </div>
-
-
-        <div class="col-sm-3 col-sm-offset-1 pull-right">
-          <h4>Otsing</h4>
-          <form class="form-ingline">
-            <div class="input-group">
-              <input type="text" class="form-control" placeholder="otsingusõna siia">
-              <span class="input-group-btn">
-                <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
-              </span>
-            </div>
-          </form>
+          <div class="w-col w-col-6 banner_p">
+            <p class="banner_p_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+          </div>
         </div>
       </div>
     </div>
-  </footer>
-</div>
--->
-
-  </body>
-</html>
+    <div class="about">
+      <div class="w-container about_c">
+        <div class="w-row">
+          <div class="w-col w-col-4 bootstrap">
+            <div class="bootstrap_c">
+              <h1 class="bootstrap_h">BOOTSTRAP</h1>
+              <p class="bootstrap_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+            </div>
+          </div>
+          <div class="w-col w-col-4 css">
+            <div class="css_c">
+              <h1 class="css_h">CSS</h1>
+              <p class="css_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+            </div>
+          </div>
+          <div class="w-col w-col-4 html">
+            <div class="html_c">
+              <h1 class="html_h">HTML</h1>
+              <p class="html_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
