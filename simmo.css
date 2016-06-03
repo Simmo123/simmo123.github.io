@@ -29,6 +29,7 @@ body {
 .nav_link {
   height: 75px;
   margin: auto;
+  padding-top: 22px;
   -webkit-perspective: 1036px;
   perspective: 1036px;
   font-family: Lato, sans-serif;
@@ -40,6 +41,20 @@ body {
   text-transform: uppercase;
 }
 
+.nav_link:hover {
+  border-right: 0px none #575757;
+  border-bottom: 2px none #575757;
+  border-left: 0px none #575757;
+  background-color: #0095cf;
+}
+
+.nav_link:active {
+  border-right-style: none;
+  border-bottom-style: none;
+  border-left-style: none;
+  background-color: #960000;
+}
+
 .banner {
   display: block;
   width: auto;
@@ -47,7 +62,13 @@ body {
   margin-top: 75px;
   margin-right: auto;
   margin-left: auto;
+  border-right: 0px solid #000;
   background-color: #0095cf;
+}
+
+.banner:hover {
+  border-left: 1px solid #000;
+  border-right-width: 1px;
 }
 
 .content {
@@ -85,7 +106,7 @@ body {
 .banner_h_lorem {
   margin-top: 60px;
   font-family: Lato, sans-serif;
-  color: #000;
+  color: #575757;
   font-size: 47px;
   font-weight: 500;
   text-transform: uppercase;
@@ -93,7 +114,7 @@ body {
 
 .banner_h_dolor {
   font-family: Lato, sans-serif;
-  color: #000;
+  color: #575757;
   font-size: 47px;
   line-height: 44px;
   font-weight: 500;
@@ -125,21 +146,22 @@ body {
 }
 
 .about {
-  height: 100%;
+  height: 1600px;
 }
 
 .about_c {
-  height: 99%;
+  height: 370px;
+  background-color: transparent;
 }
 
 .bootstrap {
-  height: 400px;
+  height: 320px;
   margin-top: 50px;
   background-color: #0095cf;
 }
 
 .css {
-  height: 400px;
+  height: 320px;
   margin-top: 50px;
   border-right: 3px solid #e7f5ff;
   border-left: 3px solid #e7f5ff;
@@ -147,67 +169,538 @@ body {
 }
 
 .html {
-  height: 400px;
+  height: 320px;
   margin-top: 50px;
   background-color: #0095cf;
 }
 
 .bootstrap_h {
   margin-top: 10px;
+  margin-bottom: 10px;
   font-family: Lato, sans-serif;
-  color: #000;
+  color: #e6e6e6;
   text-align: center;
 }
 
 .css_h {
   margin-top: 10px;
   margin-bottom: 10px;
-  color: #000;
+  color: #e6e6e6;
   text-align: center;
 }
 
 .html_h {
   margin-top: 10px;
-  color: #000;
+  margin-bottom: 10px;
+  color: #e6e6e6;
   text-align: center;
 }
 
 .bootstrap_c {
-  height: 380px;
+  height: 300px;
   margin-top: 10px;
   margin-bottom: 0px;
   background-color: #0095cf;
 }
 
 .css_c {
-  height: 380px;
+  height: 300px;
   margin-top: 5px;
   background-color: #0095cf;
 }
 
 .html_c {
-  height: 380px;
+  height: 300px;
   margin-top: 10px;
   background-color: #0095cf;
 }
 
 .bootstrap_p {
-  font-size: 25px;
+  font-family: Lato, sans-serif;
+  color: #575757;
+  font-size: 20px;
   line-height: 23px;
-  text-align: left;
-  letter-spacing: -1px;
+  text-align: center;
+  letter-spacing: 0px;
 }
 
 .css_p {
-  font-size: 25px;
+  font-family: Lato, sans-serif;
+  color: #575757;
+  font-size: 20px;
   line-height: 23px;
   text-align: center;
-  letter-spacing: -1px;
+  letter-spacing: 0px;
 }
 
 .html_p {
-  font-size: 25px;
+  font-family: Lato, sans-serif;
+  color: #575757;
+  font-size: 20px;
   line-height: 23px;
+  text-align: center;
+  letter-spacing: 0px;
+}
+
+.about_port {
+  height: 700px;
+  margin-top: 50px;
+  border-style: none;
+  border-top-width: 2px;
+  border-top-color: #0095cf;
+  background-color: #0095cf;
+}
+
+.about_port_row {
+  height: 250px;
+  margin-top: 50px;
+}
+
+.pic1_1 {
+  width: 400px;
+  height: 200px;
+  margin-top: 50px;
+  background-color: #375364;
+}
+
+.pic2 {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  display: inline-block;
+  width: 400px;
+  height: 200px;
+  margin-top: 0px;
+  float: none;
+  clear: none;
+  background-color: #433b63;
+}
+
+.pic3 {
+  height: 200px;
+  margin-top: 50px;
+  background-color: #1b303d;
+}
+
+.pic4 {
+  height: 200px;
+  margin-top: 50px;
+  background-color: #7a8d52;
+}
+
+.pic5 {
+  height: 200px;
+  margin-top: 50px;
+  background-color: #93a1aa;
+}
+
+.pic6 {
+  height: 200px;
+  margin-top: 50px;
+  background-color: #93a1aa;
+}
+
+.pild1 {
+  height: 200px;
+  background-color: #6f0;
+}
+
+.pild2 {
+  height: 200px;
+  background-color: #30f;
+}
+
+.pild3 {
+  height: 200px;
+  background-color: #242627;
+}
+
+.pild4 {
+  height: 200px;
+  background-color: #36556b;
+}
+
+.about_port_btn {
+  position: relative;
+  left: 8px;
+  top: -2px;
+  right: -8px;
+  float: right;
+  clear: none;
+  background-color: #575757;
+  font-family: Lato, sans-serif;
+}
+
+.about_port_btn:hover {
+  background-color: #0095cf;
+}
+
+.about_port_btn:active {
+  background-color: #960000;
+}
+
+.about_me {
+  height: 550px;
+}
+
+.about_me_c {
+  height: 400px;
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
+
+.about_me_c_img {
+  display: block;
+  width: 250px;
+  height: 250px;
+  margin-right: auto;
+  margin-left: auto;
+  border: 7px solid #0095cf;
+  border-radius: 200px;
+  background-color: #b8b8b8;
+  background-image: url('../images/best-portrait-photography-regina-pagles (10).jpg');
+  background-position: -109px -23px;
+  background-size: 400px;
+  background-repeat: no-repeat;
+}
+
+.about_me_c_p {
+  display: block;
+  width: 500px;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Lato, sans-serif;
+  color: #575757;
+  font-size: 16px;
+  text-align: center;
+}
+
+.asdf {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.contact {
+  position: relative;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 550px;
+  background-color: #575757;
+}
+
+.footer_bottom {
+  position: relative;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+.form {
+  display: block;
+  width: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 100px;
+}
+
+.name {
+  margin-top: 80px;
+  border-style: none none solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #fff;
+  background-color: #575757;
+  color: #e6e6e6;
+}
+
+.form_h {
+  color: #e6e6e6;
+  font-size: 40px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.contact_thick {
+  font-weight: 700;
+}
+
+.email {
+  border-style: none none solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #fff;
+  background-color: #575757;
+  color: #e6e6e6;
+}
+
+.text {
+  border-style: none none solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #fff;
+  background-color: #575757;
+  color: #e6e6e6;
+}
+
+.btn_mail {
+  display: block;
+  width: 200px;
+  height: 50px;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #0095cf;
+}
+
+.send_mail {
+  background-color: #0095cf;
+  font-family: Lato, sans-serif;
+}
+
+.form_table {
+  height: 250px;
+}
+
+.label {
+  position: relative;
+  left: 0px;
+  top: -242px;
+  right: 0px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Lato, sans-serif;
+  color: #e6e6e6;
+  font-size: 36px;
+}
+
+.footer {
+  background-color: #1f1f1f;
+}
+
+.map {
+  background-color: #575757;
+}
+
+.personal_contact_text {
+  padding-left: 100px;
+  font-family: Lato, sans-serif;
+  color: #e6e6e6;
+  text-align: left;
+}
+
+.adress_text {
+  padding-right: 100px;
+  font-family: Lato, sans-serif;
+  color: #e6e6e6;
   text-align: right;
-  letter-spacing: -1px;
+}
+
+.row_contact {
+  margin-bottom: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #424242;
+}
+
+.pic1_1_hover {
+  width: 328px;
+  height: 100%;
+  margin-left: -9px;
+  background-color: hsla(0, 0%, 100%, .53);
+}
+
+.pic_hover {
+  display: block;
+  width: 300px;
+  height: 200px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #353535;
+  color: #242424;
+}
+
+.pic_head {
+  color: #e6e6e6;
+}
+
+.pic_para {
+  height: 50px;
+  color: #e6e6e6;
+}
+
+.row1 {
+  height: 200px;
+  background-color: #416e8d;
+}
+
+.row2 {
+  height: 200px;
+}
+
+.row3 {
+  height: 200px;
+}
+
+.row4 {
+  height: 200px;
+}
+
+.pic_1 {
+  width: 400px;
+  height: 200px;
+}
+
+.about_port_c {
+  height: 700px;
+}
+
+.about_port_c_row {
+  border-style: none none solid;
+  border-bottom-width: 5px;
+  border-bottom-color: #0095cf;
+}
+
+._1 {
+  height: 200px;
+  margin-top: 50px;
+  border-right: 5px solid #0095cf;
+  border-left: 2px solid #0095cf;
+  background-image: url('../images/man-ocean-phytoplankton_91111_600x450.jpg');
+  background-position: 0px 0px;
+  background-size: 355px;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+._2 {
+  height: 200px;
+  margin-top: 50px;
+  border-right: 5px solid #0095cf;
+  border-left: 5px solid #0095cf;
+  background-image: url('../images/tundra-tea-toss.jpg');
+  background-position: 0px 0px;
+  background-size: 350px;
+  background-repeat: no-repeat;
+}
+
+._3 {
+  height: 200px;
+  margin-top: 50px;
+  border-right: 2px solid #0095cf;
+  border-left: 5px solid #0095cf;
+  background-image: url('../images/image.adapt.960.high.photos_year_2015_05a.jpg');
+  background-position: 0px 0px;
+  background-size: 350px;
+  background-repeat: no-repeat;
+}
+
+._4 {
+  height: 300px;
+  border-right: 5px solid #0095cf;
+  background-image: url('../images/stock-photo-114337435-1500x1000.jpg');
+  background-position: 0px 0px;
+  background-size: 765px;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+._5 {
+  height: 300px;
+  border-left: 5px solid #0095cf;
+  background-image: url('../images/stock-photo-144748015-1-1500x814.jpg');
+  background-position: 0px 0px;
+  background-size: 765px;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+.about_port_c_row2 {
+  border: 2px solid #0095cf;
+}
+
+._1_overlay {
+  position: relative;
+  left: -10px;
+  top: -20px;
+  right: -17px;
+  bottom: -125px;
+  width: 313px;
+  height: 200px;
+  background-color: #666;
+}
+
+._1_overlay_h {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 73px;
+  font-family: Lato, sans-serif;
+  color: #f1f1f1;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: default;
+}
+
+.big_overlay {
+  position: relative;
+  left: -10px;
+  top: 0px;
+  bottom: -22px;
+  display: block;
+  width: 473px;
+  height: 300px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 100px;
+  padding-bottom: 83px;
+  background-color: #666;
+  text-align: center;
+}
+
+.big_overlay_h {
+  color: #f1f1f1;
+  cursor: default;
+}
+
+.nav_h {
+  margin-top: 14px;
+  font-family: Lato, sans-serif;
+  color: #e6e6e6;
+  font-size: 35px;
+  font-weight: 400;
+}
+
+.about_me_c_img_overlay {
+  position: relative;
+  left: 345px;
+  top: -250px;
+  right: -185px;
+  width: 250px;
+  height: 250px;
+  border-radius: 100px;
+  background-color: #0098ff;
+}
+
+.about_me_c_overlay {
+  position: relative;
+  left: -7px;
+  top: -27px;
+  width: 250px;
+  height: 250px;
+  border-radius: 250px;
+  background-color: #5a5a5a;
+}
+
+.about_me_c_overlay_h {
+  padding-top: 93px;
+  font-family: Lato, sans-serif;
+  color: #f1f1f1;
+  text-align: center;
+  cursor: default;
+}
+
+html.w-mod-js *[data-ix="hover-overlay"] {
+  opacity: 0;
 }
